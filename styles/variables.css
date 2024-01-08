@@ -1,1 +1,26 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+  --width-clamp: clamp(375px, 50%, 696px);
+  --main-font: "Inter", sans-serif;
+  --decor-font: "PressStart2P", sans-serif;
+  --font-main-line-height: normal;
+  --font-main-text-transform: uppercase;
+  --heart-core: none;
+  --color-sparks: #ff0000;
+
+  --background-color: rgba(0, 0, 0, 1);
+  --text-color: #00cc14;
+  --heart-contour: #00cc14;
+  --heart-main-body: #000;
+  --focus-color: #00cc14;
+  --background-image: repeating-linear-gradient(
+      to right,
+      #000 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #007f0c, #004306);
+  --text-variable-weight: 785;
+  --basictext-variable-weight: 465;
+}
