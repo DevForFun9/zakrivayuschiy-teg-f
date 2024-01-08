@@ -22,7 +22,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font);
-  font-variation-settings: 'wght' var(--text-variable-weight);
+  font-variation-settings: "wght" var(--text-variable-weight);
   font-size: 18px;
   color: var(--text-color);
   background-image: var(--background-image);
@@ -101,7 +101,7 @@
 
 .button__animation::after {
   position: absolute;
-  content: '';
+  content: "";
   transform: scaleX(0);
   width: 100%;
   height: 100%;
@@ -133,14 +133,14 @@
 .theme-menu__item button:disabled {
   cursor: default;
   opacity: 0.6;
-  content: '▶';
+  content: "▶";
   position: relative;
   pointer-events: none;
 }
 
 .theme-menu__item button:disabled::before {
   position: absolute;
-  content: '▶';
+  content: "▶";
   top: 0;
   left: -21px;
   animation: theme-menu 0.5s infinite ease-in-out alternate;
@@ -154,7 +154,7 @@
 
 .theme-menu__item button::after {
   position: absolute;
-  content:'';
+  content: "";
   top: 15px;
   left: -3px;
   width: 108%;
@@ -169,7 +169,7 @@
 
 .main {
   width: var(--width-clamp);
-  font-variation-settings: 'wght' var(--text-variable-weight);
+  font-variation-settings: "wght" var(--text-variable-weight);
   line-height: 116.667%;
 }
 
@@ -189,9 +189,9 @@
   font-style: normal;
   line-height: var(--font-main-line-height);
   display: block;
-  padding-inline-start: 10px;
+  padding: 5px 10px;
   padding-block: 4px;
-  font-variation-settings: 'wght' var(--text-variable-weight);
+  font-variation-settings: "wght" var(--text-variable-weight);
   position: relative;
 }
 
@@ -211,7 +211,7 @@ img {
   opacity: 0.5;
   color: var(--text-color);
   font-size: 14px;
-  line-height:  var(--font-main-line-height);
+  line-height: var(--font-main-line-height);
   text-transform: var(--font-main-text-transform);
   text-shadow: 0 0 1px var(--background-color);
   inset-inline-end: 13px;
@@ -227,7 +227,7 @@ img {
   font-size: 18px;
   line-height: calc(21 / 18);
   border-top: 2px solid var(--text-color);
-  font-variation-settings: 'wght' var(--basictext-variable-weight);
+  font-variation-settings: "wght" var(--basictext-variable-weight);
 }
 
 .button__likes {
@@ -280,7 +280,7 @@ img {
   display: flex;
   align-items: center;
   gap: 20px;
-  font-variation-settings: 'wght' var(--basictext-variable-weight);
+  font-variation-settings: "wght" var(--basictext-variable-weight);
   line-height: 21px;
 }
 
@@ -290,9 +290,14 @@ img {
   gap: 10px;
 }
 
+.card__icon-button:focus {
+  outline: none;
+}
+
 .card__icon-buttont:focus-visible {
   outline: 2px solid var(--text-color);
   transition: outline 0.3s;
+  height: 100%;
 }
 
 .modal__icon {
@@ -312,7 +317,7 @@ img {
   padding: 0;
 }
 
-.button__OK {
+.button__ok {
   inline-size: 100%;
   display: flex;
   justify-content: center;
@@ -363,8 +368,8 @@ img {
   }
 
   .card {
-  margin-bottom: 50px;
-}
+    margin-bottom: 50px;
+  }
 
   .modal {
     max-inline-size: 350px;
@@ -383,7 +388,8 @@ img {
 }
 
 @supports (
-  (-webkit-text-stroke: 1px var(--background-color)) or (text-stroke: 1px var(--background-color))
+  (-webkit-text-stroke: 1px var(--background-color)) or
+    (text-stroke: 1px var(--background-color))
 ) {
   .card__img-label {
     text-shadow: none;
